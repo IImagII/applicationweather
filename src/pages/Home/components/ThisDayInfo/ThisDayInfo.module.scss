@@ -1,0 +1,49 @@
+@import '../../../../styles/variables.scss';
+
+.this__day_info {
+   position: relative;
+   padding: 20px 30px;
+   max-width: 750px;
+   width: 100%;
+   background: var(#{--components-background-default});
+   box-shadow: $box-shadow;
+   border-radius: $border-radius;
+}
+img {
+   position: absolute;
+   right: 0;
+   top: 0;
+}
+.item {
+   position: relative;
+   display: flex;
+   align-items: center;
+   margin-bottom: 45px;
+   &:last-of-type {
+      margin-bottom: 0;
+   }
+}
+.indicator {
+   height: 38px;
+   width: 38px;
+   margin-right: 20px;
+   display: flex;
+   align-items: center;
+   justify-content: center;
+   background: #fff;
+   box-shadow: 1px 4px 10px -1px rgba(71, 147, 255, 0.2);
+   border-radius: 50%;
+
+   &__name,
+   &__value {
+      font-size: 14px;
+      line-height: 17px;
+      text-align: right;
+      color: $base-color;
+      margin-right: 20px;
+      z-index: 10;
+   }
+   &__value {
+      color: var(#{--text-color-default});
+   }
+}

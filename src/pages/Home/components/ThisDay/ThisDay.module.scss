@@ -1,0 +1,53 @@
+@import '../../../../styles/variables.scss';
+
+.this {
+   &__day {
+      padding: 20px;
+      max-width: 400px;
+      width: 100%;
+      background: var(#{--components-background-default});
+      box-shadow: $box-shadow;
+      border-radius: $border-radius;
+      margin-top: 30px;
+      &_name {
+         font-size: 40px;
+         color: var(#{--text-color-default});
+      }
+   }
+   &__temp {
+      font-style: normal;
+      font-weight: 500;
+      font-size: 96px;
+      line-height: 117px;
+      color: $primary-color;
+   }
+   &__time,
+   &__city {
+      font-style: normal;
+      font-weight: 400;
+      font-size: 25px;
+      line-height: 30px;
+      color: $base-color;
+      margin-bottom: 14px;
+      span {
+         margin-left: 5px;
+      }
+   }
+}
+.top__block {
+   display: flex;
+   justify-content: space-between;
+   align-items: center;
+   width: 100%;
+   &_wrapper {
+      margin-right: 81px;
+   }
+   svg {
+      height: 119px;
+      width: 119px;
+      margin-top: 46px;
+   }
+}
+.botom__block {
+   margin-top: 31px;
+}
